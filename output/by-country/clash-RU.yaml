@@ -20,24 +20,24 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 104.21.79.199
+  server: 217.19.122.200
   port: 443
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
+    path: /ws
     headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
+      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+  server: 185.22.154.239
+  port: 40101
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
@@ -53,27 +53,6 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: ss
-  server: 195.58.48.137
-  port: 40401
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  type: ss
-  server: 195.133.23.200
-  port: 40440
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  type: ss
-  server: 185.22.154.239
-  port: 40101
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,9 +62,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,8 +71,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
